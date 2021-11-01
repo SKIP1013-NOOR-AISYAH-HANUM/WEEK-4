@@ -1,0 +1,49 @@
+package myScanner;
+
+import java.util.Scanner;
+
+public class Exercise3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int numint;
+		double numdouble;
+		
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter an integer: ");
+		numint = scan.nextInt();
+		
+		System.out.println("Enter Double value: ");
+		numdouble = scan.nextDouble();
+		
+		System.out.println("Using nextInt(): " + numint);
+		System.out.println("Using nextDouble(): " +numdouble);
+		
+		numint = numint + 1;
+		numdouble = numdouble - 1;
+		
+		System.out.println("Using nextInt() increment by 1: " +numint);
+		System.out.println("Using nextDouble() decreament by 1: " + numdouble);
+		
+		numint = numint + 5;
+		numdouble = numdouble - 5;
+		
+		System.out.println("Using nextInt() increment by 5: " +numint);
+		System.out.println("Using nextDouble() decreament by 5: " + numdouble);
+		
+		numint = numint % 10;
+		numdouble = numdouble % 10;
+		
+		System.out.println("Using nextInt() mod 10 : " +numint);
+		System.out.println("Using nextDouble() mod 10 : " + numdouble);
+		
+		double y = Math.pow(numint,  numdouble);
+		System.out.println(y);
+		
+		
+		
+	}
+
+}
